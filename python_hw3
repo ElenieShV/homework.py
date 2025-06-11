@@ -1,0 +1,8 @@
+steps=int(input("Enter the number os steps:"))
+if steps<5000:
+    print("Today you moved too little")
+elif steps<=10000:
+    print("Not bad")  
+else:
+    print("Well done")    
+    
