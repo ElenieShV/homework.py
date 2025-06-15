@@ -5,4 +5,91 @@ elif steps<=10000:
     print("Not bad")  
 else:
     print("Well done")    
-    
+
+
+LEVEL1
+Task#1
+
+day = int(input("Enter the day number (1-7): "))
+
+if day == 1:
+    print("Monday")
+elif day == 2:
+    print("Tuesday")
+elif day == 3:
+    print("Wednesday")
+elif day == 4:
+    print("Thursday")
+elif day == 5:
+    print("Friday")
+elif day == 6:
+    print("Saturday")
+elif day == 7:
+    print("Sunday")
+else:
+    print("number is incorrect. Enter number 1-7.")
+
+Task#2
+month = int(input("Enter mounth number (1-12): "))
+
+if month == 1:
+    print("January")
+elif month == 2:
+    print("February")
+elif month == 3:
+    print("March")
+elif month == 4:
+    print("Fpril")
+elif month == 5:
+    print("May")
+elif month == 6:
+    print("June")
+elif month == 7:
+    print("July")
+elif month == 8:
+    print("August")
+elif month == 9:
+    print("September")
+elif month == 10:
+    print("October")
+elif month == 11:
+    print("November")
+elif month == 12:
+    print("December")
+else:
+    print("Incorrect number. Enter numbers 1-12.")
+
+LEVEL2
+Task#3
+
+amount = float(input("Enter the total amount of your purchase: "))
+age = int(input("Enter your age: "))
+
+if age < 18:
+    discount = 10
+elif age <= 60:
+    discount = 5
+else:
+    discount = 15
+
+final_price = amount * (1 - discount / 100)
+
+print("Your discount:", str(discount) + "%")
+print("Final amount after discount:", final_price)
+
+
+Task#4
+
+grade1 = int(input("Enter the first grade (1-5): "))
+grade2 = int(input("Enter the second grade (1-5): "))
+grade3 = int(input("Enter the third grade (1-5): "))
+
+if grade1 == 2 or grade2 == 2 or grade3 == 2:
+    print("Unsatisfactory")
+elif grade1 >= 4 and grade2 >= 4 and grade3 >= 4:
+    print("Excellent")
+else:
+    print("Satisfactory")
+
+
+
