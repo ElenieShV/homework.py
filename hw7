@@ -1,0 +1,51 @@
+Task#1
+
+x = int(input("Enter number x: "))
+y = int(input("Enter number y: "))
+
+result = x ** y
+print(f"{x} to the power of {y} is {result}")
+
+  
+  
+  Task#2
+
+  number = int(input("Enter a positive integer: "))
+i = 1
+count = 0
+
+print(f"Divisors of {number}: ", end='')
+
+while i <= number:
+    if number % i == 0:
+        print(i, end=' ')
+        count += 1
+    i += 1
+
+print(f"\nTotal number of divisors: {count}")
+
+
+  Task#3
+
+count = 0
+
+for number in range(100, 1000):
+    digits = str(number)
+    if digits[0] == digits[1] or digits[0] == digits[2] or digits[1] == digits[2]:
+        count += 1
+
+print("Numbers with two same digits:", count)
+
+
+Task#4
+
+count = 0
+
+for number in range(100, 10000):
+    digits = str(number)
+    if len(set(digits)) == len(digits):
+        count += 1
+
+print("Numbers with all different digits:", count)
+
+
