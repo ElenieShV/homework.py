@@ -1,5 +1,4 @@
 #TASK 1
-#using "for"
 
 import random
 rows = int(input("Enter number of rows: "))
@@ -11,23 +10,6 @@ for i in range(rows):
         row_values.append(num)
         print(num, end=' ')
     print(f"| Min: {min(row_values)}, Max: {max(row_values)}")
-
-#using "while"
-
-import random
-rows = int(input("Enter number of rows: "))
-cols = int(input("Enter number of columns: "))
-i = 0
-while i < rows:
-    row_values = []
-    j = 0
-    while j < cols:
-        num = random.randint(3, 130)
-        row_values.append(num)
-        print(num, end=' ')
-        j += 1
-    print(f"| Min: {min(row_values)}, Max: {max(row_values)}")
-    i += 1
 
     #TASK 2
 
@@ -43,8 +25,14 @@ print("Number of letters:", letters)
 print("Number of digits:", digits)
 
     #TASK 3
+text = input("Enter a string: ")
+reversed_text = ""
 
-    
+for char in text:
+    reversed_text = char + reversed_text 
+
+print("Reversed string:", reversed_text)
+
 
     #TASK 4
 text = input("Enter a string: ")
