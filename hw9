@@ -1,0 +1,56 @@
+#TASK 1
+#using "for"
+
+import random
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+for i in range(rows):
+    row_values = []
+    for j in range(cols):
+        num = random.randint(3, 130)
+        row_values.append(num)
+        print(num, end=' ')
+    print(f"| Min: {min(row_values)}, Max: {max(row_values)}")
+
+#using "while"
+
+import random
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+i = 0
+while i < rows:
+    row_values = []
+    j = 0
+    while j < cols:
+        num = random.randint(3, 130)
+        row_values.append(num)
+        print(num, end=' ')
+        j += 1
+    print(f"| Min: {min(row_values)}, Max: {max(row_values)}")
+    i += 1
+
+    #TASK 2
+
+text = input("Enter a string: ")
+letters = 0
+digits = 0
+for char in text:
+    if char.isalpha():
+        letters += 1
+    elif char.isdigit():
+        digits += 1
+print("Number of letters:", letters)
+print("Number of digits:", digits)
+
+    #TASK 3
+
+    
+
+    #TASK 4
+text = input("Enter a string: ")
+words = text.split()
+longest_word = ""
+for word in words:
+    if len(word) > len(longest_word):
+        longest_word = word
+print("The longest word is:", longest_word)
