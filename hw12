@@ -1,0 +1,40 @@
+#Task 2
+
+def print_even_numbers(start, end):
+    for number in range(start, end + 1):  
+        if number % 2 == 0:
+            print(number)
+
+print_even_numbers(3, 15)        
+
+  
+#Task 3
+
+  def draw_square(size, char, filled):
+    for i in range(size):
+        if filled:
+            print(char * size)
+        else:
+            if i == 0 or i == size - 1:
+                print(char * size)
+            else:
+                print(char + " " * (size - 2) + char)
+                
+print("Filled square:")
+draw_square(5, "*", True)
+
+print("\nEmpty square:")
+draw_square(5, "*", False)
+
+
+#Task 4
+
+  def find_minimum(a, b, c, d, e):
+    return min(a, b, c, d, e)
+
+result = find_minimum(12, 5, 7, 3, 9)
+print("Minimal number:", result)
+
+
+  
+  
